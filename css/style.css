@@ -1,0 +1,132 @@
+/* 
+ * CSS Style
+ */
+ /* Font from google Open Sans */
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+ /* Variables  */
+ :root {
+    /* base colors */
+    --color-white: #fff;
+    --color-black: #000;
+    /* grayscale */
+    --color-gray-lighter: #eee;
+    --color-gray-light: #ddd;
+    --color-gray: #ccc;
+    --color-gray-dark: #666
+    --color-gray-darker: #333;
+    /* project colors */
+    --color-red: #F03C42;
+    --color-blue: #222374;
+ }
+/* minimal reset from digital ocean */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+}
+ol, ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+/* colors */
+.text-white {
+    color: var(--color-white);
+}
+.text-red {
+    color: var(--color-red);
+}
+.bg-red {
+    background-color: var(--color-red);
+}
+.bg-blue {
+    background-color: var(--color-blue);
+}
+.bg-light {
+    background-color: var(--color-gray-lighter);
+}
+/* Structure */
+.container {
+    width: 94%;
+    max-width: 960px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+section {
+    border-radius: 6px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+section.gray {
+    color: var(--color-black);
+    background-color: var(--color-gray);
+}
+section.blue {
+    color: var(--color-white);
+    background-color: var(--color-blue);
+}
+footer {
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+footer p {
+    margin-bottom: 1em;
+}
+/* Class */
+.d-flex {
+    display: flex;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-col {
+    flex-direction: column;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.align-center {
+    align-items: center;
+}
+/* spaces */
+.py-1 {
+    padding: calc(1em * .25) 0;
+}
+.py-2 {
+    padding: calc(1em * .5) 0;
+}
+.py-3 {
+    padding: calc(1em) 0;
+}
+.py-4 {
+    padding: calc(1em * 1.5) 0;
+}
+.py-5 {
+    padding: calc(1em * 3) 0;
+}
+/* image */
+.img--icon {
+    vertical-align: middle;
+}
+
+/* alignment */
+.text-center {
+    text-align: center;
+}
